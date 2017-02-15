@@ -6,6 +6,19 @@ The system that currently exists provides a JSF page that renders a list of
 contents from a database. To practice, your job is to add full CRUD operations
 on this list.
 
+Specifically, the following functionality should be achievable:
+
+* Read a List of Guestbook Posts
+* Add a Guestbook Post
+* Edit a Guestbook Post
+* Delete a Guestbook Post
+
+It's possible to do this all on a single JSF page (ie- without navigation.) Your
+solution may use one page, or several pages. It's up to you.
+
+Note: This does NOT need login or any authentication. You're welcome to add it
+in, but it's not necessary.
+
 This is based on the following database structure. If you're on-site, you'll be
 able to access the attached DB. If not, you can install it yourself on your home
 system using XAMPP or otherwise.
