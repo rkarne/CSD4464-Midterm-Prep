@@ -6,17 +6,20 @@
         <title>Guestbook</title>
     </h:head>
     <h:body>
-        <h:dataTable value="#{guestbook.guestbookPosts}" var="post">
+        <h:form>
+        <h:dataTable value="#{guestbook.guestbookPosts}" var="book">
             <h:column>
-                #{post.id}
+            <h:commandLink action="#{guestbook.view(book)}">  #{book.id} </h:commandLink> 
             </h:column>
             <h:column>
-                #{post.author}
+                #{book.author}
             </h:column>
             <h:column>
-                #{post.message}
+                #{book.message}
             </h:column>
         </h:dataTable>
+          <h:commandButton value="Add New" action="#{guestbook.addPost()}" />
+        </h:form>
     </h:body>
 </html>
 
